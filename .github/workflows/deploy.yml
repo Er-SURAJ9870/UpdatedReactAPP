@@ -18,7 +18,33 @@ jobs:
       with:
         host: 13.233.194.181 
         username: ubuntu 
-        key: ReactAppKey.pem 
+        key: -----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAoLIq6XHAPJ3bz2DBSpm0Ir2A3P6KrH6zXwzvz8C+DLgB/h99
+CoEoaonVFu2+cGlKEO9XtHpDNKXS/9BGXHEi/CVpA1+bB+8fmBwbFnw0MA70/TmW
+m/sUTTulq9bFNfp+r6eb3491nMccW1lkN92sz1uEZzr7j3wTHNA9H9BDdO6ukREK
+QaWgyuqNN5+f8JxdkcwwfGlvfQhqMxLyNx4EyAJdV5S1Dfdm/M9GdsFHcDi6QSSO
+xBq4L2fABhpcloaNx6mdCAELOzrBj3q9bhySUc9mLntjzbaezvXPLeKFRBz9yOf0
+crI0gZaVtumKbrq66NlzVZ08HlbVcS2Qn2rfIwIDAQABAoIBAQCD9qxMttAyN0R6
+ga9aDu0iFlNLqHDDBO1SYjJRfqvTkAx63ur1hGlnTDdEtApPD/f1/kcc+8ZS5tZm
+o2gUpAgh3qrlTU7n7hQY+wO3rFnDGZVQmkk3YLIkVpZPjni3QjVlFJRpu8rO66g6
+0Cb/xbgTNMl/aK2LAE5FvDBl/sZWsBoBr+/gb1Nbk4HrvMYz1QBnRPfa24sGVNf0
+fqexWwv62av/RApCSh3cPrGlki0DmSvkzLnW6y+6wSgyU4JiDOR+lPvjfa5/7Jtn
+M0kDXhDBPg5WKh+xXHTUQiVCiwOwPJuKVNJE7SbLhKiKrO2WmKZwDUNKa6J+h1yP
+rXySt0B5AoGBANTZqvFkUxErEXy7acvTqhcAXMteDoluWEHZ384QnDLYM2C1uhQQ
+LxQ/ftBlLEnXibjwuPpcWSlRMTfO22JrW+6jBydbNTEgPDwTDSs4scsSyukzbx9T
+y/Nj0/raGkLJZUUECyfuEllvS1jNTl9Z2opvc1nUV6P16bJBYMU5b5dPAoGBAMFF
+1oc3xRfte35IVw8d6nC2Bst/XaJidqXe+BdBR2p4R4u1dzT4YIvAXFbTVQUagcV/
+vJ3F3LmlKXEiUp+rh3Dld+PN4sZEZpFNdQ1oj4N7IO9oCld6FRubMtUDgwx/0y7j
+JE7bb8pwXCSV0wxuhhozOFpb7qbvp+383rPGlMXtAoGAcyZ6+3LaGZyiLke5uaJ+
+D0mL6h2tYZ5HswBqurFzv3IFgZlu3LHQtnSPZ7CEYEJx6JKakB9rwRWCuf135GvO
+ZXDfSuRmB3i3/YwVAMAAN6uoCLdhs6IC4V6tbLWXpXANEGRaoLSESswSCC2x65XR
+zDj1P7DH5RUB5ATIlIo5G7MCgYAQhgsARnlYQVp0gnTG+xTHDBjqnvn/XxGrvrNR
+MaiMZrofLKWDZtTCPfDnD2xOYmTD4NbcWkUzrfYsEPYlZoHO2h90325K6yAlvgyK
+1+ylHgrDzQ5NSkexs4QWCBXVJLyGXq8E+ufE0/RcwF5pyq02YjioKQHvTb/6rcrQ
+beLcRQKBgGLAdQEDj4bvyuQJjg/xMB5KveCCpZ6FjhTxI+/v+JQbkoGnqgt+Rrkh
+oogpgg16FsF2RjxkWPEw84ZhKeFdaXNTCoPS/Lq+qC1gmZR9n64AK/vvu15FP0n+
+WccT50gh1J7j+Ev4TW1vUAmDoyAFOrymtmgoF+GOI5aDrmCPAoKG
+-----END RSA PRIVATE KEY-----
         script: |
           cd ~
           rm -rf reactapp || true
