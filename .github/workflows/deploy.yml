@@ -10,21 +10,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    - name: Deploy to EC2
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: 13.233.194.181 
-        username: ubuntu 
-       key: |-----BEGIN RSA PRIVATE KEY-----
-                MIIEowIBAAKCAQEAoLIq6XHAPJ3bz2DBSpm0Ir2A3P6KrH6zXwzvz8C+DLgB/h99
-                ...
-                -----END RSA PRIVATE KEY-----
-        script: |
-          cd ~
-          rm -rf reactapp || true
-          git clone https://github.com/<USERNAME>/reactapp-ci.git reactapp
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 13.233.194.181
+          username: ubuntu
+          key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            MIIEowIBAAKCAQEAoLIq6XHAPJ3bz2DBSpm0Ir2A3P6KrH6zXwzvz8C+DLgB/h99
+            ...
+            -----END RSA PRIVATE KEY-----
+          script: |
+            cd ~
+            rm -rf reactapp || true
+            git clone https://github.com/<USERNAME>/reactapp-ci.git reactapp
+            
           cd reactapp
           docker stop reactapp || true
           docker rm reactapp || true
