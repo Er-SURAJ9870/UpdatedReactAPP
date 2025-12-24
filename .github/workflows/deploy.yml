@@ -16,9 +16,9 @@ jobs:
     - name: Deploy to EC2
       uses: appleboy/ssh-action@v1.0.3
       with:
-        host: ${{ 13.233.194.181 }}
-        username: ${{ ubuntu }}
-        key: ${{ ReactAppKey.pem }}
+        host: 13.233.194.181 
+        username: ubuntu 
+        key: ReactAppKey.pem 
         script: |
           cd ~
           rm -rf reactapp || true
