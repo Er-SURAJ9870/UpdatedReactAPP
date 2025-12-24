@@ -27,9 +27,9 @@ jobs:
             cd ~
             rm -rf reactapp || true
             git clone https://github.com/<USERNAME>/reactapp-ci.git reactapp
-            
-          cd reactapp
-          docker stop reactapp || true
-          docker rm reactapp || true
-          docker build -t updatedreactapp .
-          docker run -d --name reactapp -p 3000:3000 updatedreactapp
+            cd reactapp
+            docker stop reactapp || true
+            docker rm reactapp || true
+            docker build -t updatedreactapp .
+            docker run -d --name reactapp -p 3000:3000 updatedreactapp
+
