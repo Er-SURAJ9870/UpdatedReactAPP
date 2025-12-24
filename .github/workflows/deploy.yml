@@ -18,13 +18,10 @@ jobs:
       with:
         host: 13.233.194.181 
         username: ubuntu 
-       key: |
-  -----BEGIN RSA PRIVATE KEY-----
-  MIIEowIBAAKCAQEAoLIq6XHAPJ3bz2DBSpm0Ir2A3P6KrH6zXwzvz8C+DLgB/h99
-  ... rest of your key lines ...
-  -----END RSA PRIVATE KEY-----
-
-
+       key: |-----BEGIN RSA PRIVATE KEY-----
+                MIIEowIBAAKCAQEAoLIq6XHAPJ3bz2DBSpm0Ir2A3P6KrH6zXwzvz8C+DLgB/h99
+                ...
+                -----END RSA PRIVATE KEY-----
         script: |
           cd ~
           rm -rf reactapp || true
