@@ -26,7 +26,7 @@ jobs:
           script: |
             cd ~
             rm -rf reactapp || true
-            git clone https://github.com/<USERNAME>/reactapp-ci.git reactapp
+            git clone https://github.com/Er-SURAJ9870/reactapp-ci.git reactapp
             cd reactapp
             docker stop reactapp || true
             docker rm reactapp || true
